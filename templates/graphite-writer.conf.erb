@@ -14,12 +14,12 @@
     Import "carbon_writer"
 
     <Module "carbon_writer">
-        LineReceiverHost "<%= graphitehost %>"
-        LineReceiverPort <%= graphiteport %>
+        LineReceiverHost "<%= @graphitehost %>"
+        LineReceiverPort <%= @graphiteport %>
         DifferentiateCountersOverTime true
         LowercaseMetricNames true
         TypesDB "/usr/share/collectd/types.db"
-        MetricPrefix "<%= hostname %>" 
+        MetricPrefix "<%= @hostname %>" 
     </Module>
 </Plugin>
 
