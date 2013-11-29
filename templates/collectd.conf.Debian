@@ -269,6 +269,11 @@ LoadPlugin users
 #	ReportInodes false
 #</Plugin>
 
+<Plugin df>
+        FSType "rootfs"
+        IgnoreSelected true
+</Plugin>
+
 #<Plugin disk>
 #	Disk "hda"
 #	Disk "/sda[23]/"
